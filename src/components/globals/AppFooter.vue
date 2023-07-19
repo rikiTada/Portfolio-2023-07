@@ -1,9 +1,7 @@
 <script setup></script>
 
 <template>
-  <footer
-    class="backdrop-blur-xl rounded-lg shadow my-2 mx-16 border border-white/50"
-  >
+  <footer class="content-bg shadow my-2 mx-16">
     <div
       class="tracking-widest w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
     >

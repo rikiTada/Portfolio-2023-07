@@ -3,7 +3,7 @@ import { KinesisContainer, KinesisElement } from "vue-kinesis";
 </script>
 <template>
   <kinesis-container
-    class="backdrop-blur px-4 max-w-screen-xl text-center py-16 lg:py-24 border border-white/50 rounded my-4"
+    class="content-bg px-4 max-w-screen-xl py-16 lg:py-24 my-4"
   >
     <kinesis-element
       type="depth"

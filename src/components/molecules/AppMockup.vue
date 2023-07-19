@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <!-- mockup  -->
-  <div class="py-24 backdrop-blur-lg border border-white/50 my-20">
+  <div class="py-24 my-20 content-bg">
     <p
       class="text-white text-sm md:text-xl mx-8 text-center animate-bounce mb-6 after:content-['🖱️']"
     >

@@ -1,5 +1,6 @@
 <script setup>
 import { ref, computed } from "vue";
+import { useRouter } from "vue-router";
 
 defineProps({
   name: String,
@@ -19,12 +20,24 @@ const formIsValid = computed(() => {
     messageInput.value.trim() !== ""
   );
 });
+
+const router = useRouter();
+let submitted = ref(false);
+const onIframeLoad = () => {
+  console.log("iframe loaded"); //Debugging
+  if (submitted.value) {
+    console.log("form submitted, redirecting...");
+    router.push("/thanks");
+  }
+};
 </script>
 
 <template>
   <form
     action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScM8qaA4WcHP3b3dZ6fF449vHvE9gErNkv9T90xx3q1YRlA4w/formResponse"
     method="POST"
+    target="hidden_iframe"
+    @submit="submitted = true"
   >
     <label
       for="name"
@@ -69,14 +82,20 @@ const formIsValid = computed(() => {
     </label>
     <button
       :class="{
-        ' cursor-not-allowed': !formIsValid,
+        ' cursor-not-allowed backdrop-blur': !formIsValid,
         'bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300':
           formIsValid,
       }"
       type="submit"
-      class="backdrop-blur font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 text-white border border-white/50"
+      class="btn"
     >
       {{ submit }}
     </button>
   </form>
+  <iframe
+    name="hidden_iframe"
+    id="hidden_iframe"
+    style="display: none"
+    @load="onIframeLoad"
+  ></iframe>
 </template>
