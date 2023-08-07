@@ -6,7 +6,7 @@ import { KinesisContainer, KinesisElement } from "vue-kinesis";
     <kinesis-element
       type="depth"
       :strength="25"
-      class="mb-4 text-4xl font-extrabold md:tracking-tight tracking-wide leading-none text-white md:text-5xl lg:text-6xl"
+      class="p mb-4 text-4xl font-extrabold md:tracking-tight tracking-wide leading-none text-white md:text-5xl lg:text-6xl"
     >
       From small steps to a big future.
     </kinesis-element>
