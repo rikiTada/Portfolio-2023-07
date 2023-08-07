@@ -16,7 +16,7 @@ body {
 }
 html {
   scroll-behavior: smooth;
-  font-family: Robot;
+  font-family: Robot, 游ゴシック;
 }
 body {
   background-color: var(--primary-color);
