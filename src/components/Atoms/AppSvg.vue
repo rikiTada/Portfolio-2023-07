@@ -3,6 +3,6 @@
   <img
     src="../../assets/Programming-pana.svg"
     alt="Programming-pana"
-    class="md:w-1/2 w-full h-full object-cover"
+    class="md:w-1/2 max-w-lg h-full object-cover"
   />
 </template>

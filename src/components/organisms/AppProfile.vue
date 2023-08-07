@@ -5,7 +5,7 @@ import SkillList from "../Atoms/SkillList.vue";
 </script>
 <template>
   <h2 class="section_ttl">PROFILE</h2>
-  <div class="flex md:flex-row flex-col">
+  <div class="flex md:flex-row flex-col justify-center">
     <AppSvg class="pointer-events-none" />
     <div class="text-white tracking-widest">
       <h3 class="text-2xl font-bold hover:after:content-['🙌']">
