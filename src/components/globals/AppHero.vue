@@ -3,12 +3,12 @@ import { KinesisContainer, KinesisElement } from "vue-kinesis";
 </script>
 <template>
   <kinesis-container
-    class="content-bg px-4 w-full min-h-[calc(100vh-4rem] py-16 lg:py-24 my-4"
+    class="content-bg px-4 w-full md:w-fit min-h-[calc(100vh-4rem] py-16 lg:py-24 my-4"
   >
     <kinesis-element
       type="depth"
       :strength="25"
-      class="p mb-4 text-4xl font-extrabold md:tracking-tight tracking-wide leading-none text-white md:text-5xl lg:text-6xl"
+      class="mb-4 text-4xl font-extrabold md:tracking-tight tracking-wide leading-none text-white md:text-5xl lg:text-6xl"
     >
       From small steps to a big future.
     </kinesis-element>

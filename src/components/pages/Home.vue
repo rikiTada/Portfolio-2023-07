@@ -7,46 +7,12 @@ import AppProfile from "..//organisms/AppProfile.vue";
 import AppContact from "..//organisms/AppContact.vue";
 
 import ScrollDisplay from "..//Atoms/ScrollDisplay.vue";
-
-//=========================================
-// GSAP🌟
-//=========================================
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
-addEventListener("load", () => {
-  //=========================================
-  // heroFV🌟
-  //=========================================
-  gsap.set(".gsap", {
-    opacity: 1,
-  });
-  gsap.from(".gsap", {
-    duration: 2.5,
-    opacity: 0,
-    scale: 2,
-  });
-  gsap.set(".profile", {
-    overflow: "hidden",
-  });
-  //=========================================
-  // profile🌟
-  //=========================================
-  gsap.from(".profile", {
-    opacity: 0,
-    duration: 1.5,
-    scrollTrigger: {
-      trigger: "#profile",
-      start: "start start",
-      markers: true,
-    },
-  });
-});
 </script>
 
 <template class="container">
+  <div id="js-mouse"></div>
   <AppHeader />
-  <main>
+  <main class="overflow-hidden">
     <section id="hero" class="gsap opacity-0">
       <AppHero />
     </section>
