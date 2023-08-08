@@ -17,6 +17,8 @@ let resizeListener = () => {
   }
 };
 
+addEventListener("load", resizeListener);
+
 onMounted(() => {
   window.addEventListener("resize", resizeListener);
 });
@@ -36,7 +38,7 @@ onUnmounted(() => {
         data-collapse-toggle="navbar-solid-bg"
         type="button"
         @click="toggleNavbar"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none"
         aria-controls="navbar-solid-bg"
         aria-expanded="false"
       >

@@ -22,7 +22,7 @@ addEventListener("load", () => {
   gsap.from(".gsap", {
     duration: 1.5,
     opacity: 0,
-    scale: 2,
+    scale: 5.5,
     ease: "back",
   });
   //=========================================
