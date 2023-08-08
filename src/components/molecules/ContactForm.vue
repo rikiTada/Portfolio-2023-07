@@ -24,7 +24,6 @@ const formIsValid = computed(() => {
 const router = useRouter();
 let submitted = ref(false);
 const onIframeLoad = () => {
-  console.log("iframe loaded"); //Debugging
   if (submitted.value) {
     console.log("form submitted, redirecting...");
     router.push("/thanks");

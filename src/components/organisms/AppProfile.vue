@@ -5,7 +5,7 @@ import AppSvg from "../Atoms/AppSvg.vue";
 </script>
 <template>
   <h2 class="section_ttl">PROFILE</h2>
-  <div class="flex gap-8 md:flex-row flex-col justify-center">
+  <div class="profile flex gap-8 md:flex-row flex-col justify-center">
     <AppSvg class="pointer-events-none" />
     <!-- <img src="../../assets/photo.png" class="lg:w-1/2 w-auto" alt="" /> -->
     <div class="text-white tracking-widest">
@@ -32,7 +32,13 @@ import AppSvg from "../Atoms/AppSvg.vue";
         </p>
         <div>
           <h4 class="font-semibold text-sm mt-5 mb-1">好きな言葉:</h4>
-          <p class="text-3xl font-semibold">効率・自動化・まったり</p>
+          <ul
+            class="text-xl md:text-3xl font-semibold grid md:flex gap-1 md:gap-3"
+          >
+            <li>効率</li>
+            <li>自動化</li>
+            <li>まったり</li>
+          </ul>
         </div>
       </div>
       <!-- <SkillList

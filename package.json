@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@fortawesome/vue-fontawesome": "^3.0.3",
+    "gsap": "^3.12.2",
     "vue": "^3.3.4",
     "vue-kinesis": "^2.0.5",
     "vue-router": "^4.2.4"
